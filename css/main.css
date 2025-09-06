@@ -132,6 +132,19 @@ blockquote footer {
   padding-bottom: 2px;
 }
 
+#main-container .media-links a {
+  text-decoration: underline;
+}
+
+#main-container .media-links a:hover {
+  color: #1585cf;
+  border-bottom: none;
+}
+
+#main-container .media-mentions a {
+  color: rgba(21, 133, 207, 1.0);
+}
+
 /* Contact info area, index.html page ------------------------------------------------- */
 #title {
   color: #20364c;
