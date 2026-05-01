@@ -4,279 +4,219 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jianwen JIANG, Homepage</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/android-icon-192x192.png"
-    />
+    <title>Jianwen JIANG</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
-    />
-    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+        color: #222;
+        max-width: 820px;
+        margin: 50px auto 80px;
+        padding: 0 24px;
+        background: #fff;
+      }
+      h1 {
+        font-size: 28px;
+        font-weight: 600;
+        margin: 0 0 4px;
+        color: #111;
+      }
+      h2 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 36px 0 12px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #e5e5e5;
+        color: #111;
+      }
+      a {
+        color: #1772d0;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      p {
+        margin: 0 0 14px;
+      }
+      ul {
+        padding-left: 22px;
+        margin: 0 0 14px;
+      }
+      li {
+        margin-bottom: 6px;
+      }
+      .header {
+        display: flex;
+        gap: 28px;
+        align-items: flex-start;
+        margin-bottom: 28px;
+      }
+      .header img {
+        width: 170px;
+        height: auto;
+        border-radius: 4px;
+        flex-shrink: 0;
+      }
+      .header-info {
+        flex: 1;
+      }
+      .affiliation {
+        color: #555;
+        margin: 0 0 10px;
+      }
+      .contact {
+        font-size: 15px;
+        color: #444;
+      }
+      .contact a {
+        margin-right: 14px;
+      }
+      .news-date {
+        color: #888;
+        font-variant-numeric: tabular-nums;
+        margin-right: 6px;
+      }
+      .news-list {
+        max-height: 220px;
+        overflow-y: auto;
+        padding-right: 8px;
+      }
+      footer {
+        margin-top: 48px;
+        padding-top: 16px;
+        border-top: 1px solid #e5e5e5;
+        font-size: 13px;
+        color: #888;
+      }
+      @media (max-width: 600px) {
+        .header {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        .header img {
+          width: 150px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div w3-include-html="navbar.html"></div>
-    <div class="spacer-div-3 hidden-xs hidden-xs"></div>
-    <div id="main-container" class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <img
-            class="center-block img img-responsive img-thumbnail"
-            src="img/profile.jpeg"
-            alt="Jianwen JIANG Profile"
-          />
-          <p id="title">Research Lead<br /></p>
-          <table class="table" id="contact-table">
-            <tbody>
-              <tr>
-                <td><i class="fas fa-at"></i></td>
-                <td>jianwen.alan AT gmail.com</td>
-              </tr>
-              <tr>
-                <td style="width: 30px"><i class="fas fa-comment"></i></td>
-                <td>Mandarin, English<br /></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm-8">
-          <div align="left">
-            <p>
-              I am an AI Research Scientist at Meta Superintelligence Lab, focusing on the cutting edge of interactive multimedia intelligence. Previously, I led human-centric generation efforts at ByteDance, following my work in perception at Alibaba.
-            </p>
-            <p>
-              My work in multimedia perception, spanning recognition, temporal localization, and spatio-temporal detection, achieved six winner awards in <a href="http://activity-net.org/challenges/2021/program.html">CVPR challenges</a>. In generation, my work explores two complementary directions, with contributions deployed in products serving billions of users worldwide:
-            </p>
-          </div>
-          <div align="left">
-            <ul>
-              <li>
-                Photorealistic Generation:
-                <a href="https://loopyavatar.github.io/">Loopy</a>,
-                <a href="http://cyberhost.github.io/">CyberHost</a>, 
-                <a href="https://arxiv.org/pdf/2504.08685">Seaweed</a>,
-                <a href="https://arxiv.org/pdf/2512.13507">Seedance</a>,
-                and
-                <a href="https://omnihuman-lab.github.io/"
-                  >the OmniHuman series</a
-                >, which has been covered by media such as
-                <span class="media-mentions">
-                <a
-                  href="https://www.forbes.com/sites/lesliekatz/2025/02/05/tiktok-owners-new-ai-tool-makes-lifelike-videos-from-a-single-photo/"
-                  >Forbes</a
-                >,
-                <a
-                  href="http://abcnews.go.com/US/chinese-tech-giant-quietly-unveils-advanced-ai-model/story?id=118572557"
-                  >ABC</a
-                >,
-                <a
-                  href="https://a16z.com/ai-avatars/"
-                  >a16z</a
-                >,
-                <a
-                  href="https://es.wired.com/articulos/omnihuman-1-nueva-ia-de-tiktok-capaz-de-crear-videos-deepfake"
-                  >Wired</a
-                >,
-                <a
-                  href="https://www.businessinsider.com/bytedance-omnihuman-ai-generated-deepfake-videos-2025-2"
-                  >Business Insider</a
-                >,
-                <a
-                  href="https://venturebeat.com/ai/omnihuman-bytedances-new-ai-creates-realistic-videos-from-a-single-photo/"
-                  >VentureBeat</a
-                >,
-                <a
-                  href="https://ent.cnr.cn/chuanmei/20250207/t20250207_527064600.shtml"
-                  >CNR News</a
-                >,
-                <a
-                  href="https://www.jiqizhixin.com/articles/2025-02-05-11"
-                  >Synced</a
-                >
-                and
-                <a href="https://www.google.com/search?q=omnihuman&amp;tbm=nws"
-                  >others</a
-                >
-                </span>.
-              </li>
-              <li>
-                Practical and Efficient Generation:
-                <a
-                  href="https://openaccess.thecvf.com/content/CVPR2025/html/Jiang_MobilePortrait_Real-Time_One-Shot_Neural_Head_Avatars_on_Mobile_Devices_CVPR_2025_paper.html"
-                  >MobilePortrait</a
-                >,
-                <a
-                  href="https://openaccess.thecvf.com/content/CVPR2025/html/Zhong_FADA_Fast_Diffusion_Avatar_Synthesis_with_Mixed-Supervised_Multi-CFG_Distillation_CVPR_2025_paper.html"
-                  >FADA</a
-                >, <a href="https://seaweed-apt.com/2">APT2</a>,
-                <a href="https://zhenzhiwang.github.io/interacthuman/"
-                  >InterActHuman</a
-                >, and
-                <a href="https://arxiv.org/abs/2506.11144">AlignHuman</a>.
-              </li>
-            </ul>
-          </div>
-          <h3 class="push-down-3"><span>Recent News</span></h3>
-          <ul>
-            <li>
-              [2026/02] Omnihuman-1.5(Oral) and InterHuman are accepted to ICLR 2026.
-            </li>
-            <li>
-              [2025/09] Two papers accepted to NeurIPS 2025 and SIGGRAPH Asia 2025, respectively.
-            </li>
-            <li>
-              [2025/09] I will be serving as an Area Chair for ICLR 2026.
-            </li>
-            <li>
-              [2025/08] We have released our latest research,
-              <a href="https://omnihuman-lab.github.io/v1_5/">OmniHuman-1.5</a>.
-            </li>
-            <li>
-              [2025/07] OmniHuman-1 accepted by ICCV 2025 as Highlight.
-            </li>
-            <li>[2025/02] Two papers accepted by CVPR 2025.</li>
-            <li>[2025/01] Loopy and CyberHost accepted by ICLR 2025 as Oral.</li>
-          </ul>
-          <h3 class="push-down-3"><span>HONORS & AWARDS</span></h3>
-          <!-- <p style="font-size: small; color: gray">
-            I won the famous video recognition and detection challenge,
-            <a href="http://activity-net.org/challenges/2021/program.html"
-              >ActivityNet</a
-            >, as the leading player from 2018 to 2021.
-          </p> -->
-          <ul>
-            <li>
-              2021, CVPR ActivityNet Challenge: AVA-Kinetics Track - 1st Place
-            </li>
-            <li>2021, CVPR ActivityNet Challenge: TAL Track - 1st Place</li>
-            <li>
-              2021, CVPR ActivityNet Challenge: HACS TAL Track - 1st Place
-            </li>
-            <li>
-              2021, CVPR ActivityNet Challenge: HACS WTAL Track - 1st Place
-            </li>
-            <li>
-              2021, CVPR Epic-Kitchen Challenge: Action Detection Track - 1st
-              Place
-            </li>
-            <li>
-              2021, CVPR Epic-Kitchen Challenge: Action Recognition Track - 2nd
-              Place
-            </li>
-            <li>2020, Outstanding Graduates of Tsinghua University</li>
-            <li>
-              2019, National Scholarship, Ministry of Education of China
-            </li>
-            <li>
-              2018, CVPR ActivityNet Challenge: AVA Vision Track - 1st Place
-            </li>
-            <li>
-              2018, CVPR ActivityNet Challenge: AVA Multimodal Track - 1st Place
-            </li>
-            <li>2018, CVPR Moments In Time Challenge - 2nd Place</li>
-            <li>
-              2016, National Scholarship, Ministry of Education of China
-            </li>
-          </ul>
-          <h3 class="push-down-3"><span>Professional Services</span></h3>
-          <ul>
-            <li>
-              Conference reviewer for NeurIPS, ICLR, AAAI, ICML, CVPR, ICCV, ECCV, etc., and Area Chair for NeurIPS, ICLR.
-            </li>
-          </ul>
-        </div>
+    <div class="header">
+      <img src="img/profile.jpeg" alt="Jianwen JIANG" />
+      <div class="header-info">
+        <h1>Jianwen JIANG</h1>
+        <p class="contact">jianwen.alan [at] gmail.com</p>
       </div>
     </div>
-    <a
-      role="button"
-      id="topper"
-      data-toggle="tooltip"
-      data-placement="top"
-      title="Top"
-      class="btn scroll-link"
-      href="#top"
-      ><i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i
-    ></a>
-    <div w3-include-html="footer.html"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/w3data.js"></script>
-    <script>
-      w3IncludeHTML();
-    </script>
-    <script src="js/main.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("li#homepage a").addClass("active");
-        $("li#homepage a").addClass("hvr-bubble-bottom");
-      });
-    </script>
+
+    <p>
+      I am an AI Research Scientist at Meta Superintelligence Lab, focusing on
+      the cutting edge of interactive multimodal intelligence. Previously, I
+      led human-centric generation efforts at ByteDance, following my work in
+      perception at Alibaba.
+    </p>
+
+    <p>
+      My work in multimedia perception, spanning recognition, temporal
+      localization, and spatio-temporal detection, achieved six winner awards
+      in
+      <a href="http://activity-net.org/challenges/2021/program.html"
+        >CVPR challenges</a
+      >. In generation, my contributions, including
+      <a href="https://loopyavatar.github.io/">Loopy</a>,
+      <a href="https://omnihuman-lab.github.io/">the OmniHuman series</a>,
+      <a href="https://arxiv.org/pdf/2504.08685">Seaweed</a>, and
+      <a href="https://arxiv.org/pdf/2512.13507">Seedance</a>, have been
+      deployed in products serving billions of users worldwide, and these
+      works have been covered by
+      <a
+        href="https://www.forbes.com/sites/lesliekatz/2025/02/05/tiktok-owners-new-ai-tool-makes-lifelike-videos-from-a-single-photo/"
+        >Forbes</a
+      >,
+      <a
+        href="http://abcnews.go.com/US/chinese-tech-giant-quietly-unveils-advanced-ai-model/story?id=118572557"
+        >ABC</a
+      >, <a href="https://a16z.com/ai-avatars/">a16z</a>,
+      <a
+        href="https://es.wired.com/articulos/omnihuman-1-nueva-ia-de-tiktok-capaz-de-crear-videos-deepfake"
+        >Wired</a
+      >,
+      <a
+        href="https://www.businessinsider.com/bytedance-omnihuman-ai-generated-deepfake-videos-2025-2"
+        >Business Insider</a
+      >,
+      <a
+        href="https://venturebeat.com/ai/omnihuman-bytedances-new-ai-creates-realistic-videos-from-a-single-photo/"
+        >VentureBeat</a
+      >,
+      <a
+        href="https://ent.cnr.cn/chuanmei/20250207/t20250207_527064600.shtml"
+        >CNR News</a
+      >, <a href="https://www.jiqizhixin.com/articles/2025-02-05-11">Synced</a>,
+      and <a href="https://www.google.com/search?q=omnihuman&tbm=nws">others</a>.
+    </p>
+
+    <p>
+      I am currently exploring how to build new forms and experiences of
+      interactive intelligence.
+    </p>
+
+    <h2>News</h2>
+    <ul class="news-list">
+      <li>
+        <span class="news-date">[2026/02]</span> OmniHuman-1.5 (Oral) and
+        InterHuman accepted to ICLR 2026.
+      </li>
+      <li>
+        <span class="news-date">[2025/09]</span> Two papers accepted to NeurIPS
+        2025 and SIGGRAPH Asia 2025.
+      </li>
+      <li>
+        <span class="news-date">[2025/09]</span> Area Chair for ICLR 2026.
+      </li>
+      <li>
+        <span class="news-date">[2025/08]</span> Released
+        <a href="https://omnihuman-lab.github.io/v1_5/">OmniHuman-1.5</a>.
+      </li>
+      <li>
+        <span class="news-date">[2025/07]</span> OmniHuman-1 accepted to ICCV
+        2025 (Highlight).
+      </li>
+      <li>
+        <span class="news-date">[2025/02]</span> Two papers accepted to CVPR
+        2025.
+      </li>
+      <li>
+        <span class="news-date">[2025/01]</span> Loopy and CyberHost accepted to
+        ICLR 2025 (Oral).
+      </li>
+    </ul>
+
+    <h2>Honors &amp; Awards</h2>
+    <ul>
+      <li>
+        2021 CVPR Challenges, 1st place: ActivityNet AVA-Kinetics, TAL,
+        HACS TAL, HACS WTAL; Epic-Kitchen Action Detection
+      </li>
+      <li>
+        2018 CVPR Challenges, 1st place: ActivityNet AVA Vision, AVA
+        Multimodal
+      </li>
+      <li>2020 Outstanding Graduate, Tsinghua University</li>
+      <li>2019, 2016 National Scholarship, Ministry of Education of China</li>
+    </ul>
+
+    <h2>Service</h2>
+    <ul>
+      <li>Area Chair: NeurIPS, ICLR.</li>
+      <li>Reviewer: NeurIPS, ICLR, AAAI, ICML, CVPR, ICCV, ECCV, etc.</li>
+    </ul>
+
+    <footer>Updated Feb 2026.</footer>
   </body>
 </html>
-
